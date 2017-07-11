@@ -1,3 +1,5 @@
+//select all svg icon and put them all into one single file.
+//whenever you add new files, images, icon. run gulp build in CMD
 var gulp = require("gulp"),
 svgSprite = require("gulp-svg-sprite"),
 rename = require("gulp-rename"),
@@ -27,7 +29,7 @@ var config = {
 			}
 		}
 	}
-}
+};
 
 gulp.task('beginClean', function(){
 	return del(['./app/temp/sprite', './app/assets/images/sprites']);
@@ -52,7 +54,7 @@ gulp.task('copySpriteGraphic', ['creatPngCopy'], function(){
 
 gulp.task('copySpriteCSS', ['creatSprite'], function(){
 	return gulp.src('./app/temp/sprite/css/*.css')
-	.pipe(rename('_sprite.css'))
+	.pipe(rename('_sprite.scss'))
 	.pipe(gulp.dest('./app/assets/styles/modules'));
 });
 

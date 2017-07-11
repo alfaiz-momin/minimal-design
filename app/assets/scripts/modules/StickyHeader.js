@@ -1,3 +1,5 @@
+// in this file lazylode for image optimization and sticky header.
+
 import $ from 'jquery';
 import waypoints from '../../../../node_modules/waypoints/lib/noframework.waypoints';
 import smoothScroll from 'jquery-smooth-scroll';

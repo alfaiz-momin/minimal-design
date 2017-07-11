@@ -10,12 +10,12 @@ gulp.task('watch', function(){
 			baseDir: 'app'
 		}
 	});
-
+	//change the path if you want to work on another html page.
 	watch('./app/index.html', function(){
 		browserSync.reload();
 	});
 
-	watch('./app/assets/styles/**/*.css', function(){
+	watch('./app/assets/styles/**/*.scss', ['sass'], function(){
 		gulp.start('cssInject');
 	});
 
@@ -23,7 +23,8 @@ gulp.task('watch', function(){
 		gulp.start('scriptsRefresh');
 	});
 
-});
+}); 
+
 
 gulp.task('cssInject', ['styles'], function() {
   return gulp.src('./app/temp/styles/style.css')

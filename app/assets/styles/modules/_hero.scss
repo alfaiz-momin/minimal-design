@@ -1,0 +1,38 @@
+.hero {
+
+	position: relative;
+
+
+	&__text-content {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		left: 0;
+		width: 100%;
+		text-align: center;
+
+		h1{
+			color: $mainGray;
+			font-family: 'Poiret One', cursive;
+			font-size: 3.5rem;
+		}
+		p {
+			color: $mainGray;
+			font-family: 'Questrial', sans-serif;
+			padding: 10px 0;
+			font-size: 1.2rem;
+			font-weight: 600;
+		}
+	}
+
+	&__image {
+		display: block;
+		height: auto;
+		width: 100%;
+
+		// @mixin atSmall {
+		// height: 500px;
+		// width: 100%;
+		// }
+	}
+}

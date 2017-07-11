@@ -1,3 +1,6 @@
+//this code is for animation effect you can modifie scroll behavier.
+//watch app.js for modification and selecting classes or id
+
 import $ from 'jquery';
 import waypoints from '../../../../node_modules/waypoints/lib/noframework.waypoints';
 

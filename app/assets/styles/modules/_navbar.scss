@@ -1,3 +1,36 @@
+.navbar {
+	width: 100%;
+	background: none !important;
+
+	a {
+		color: $mainGray;
+	}
+
+	li {
+		margin-left: 1rem;
+	}
+	li:hover {
+		background-color: $mainGray;
+		a {
+		color: $white;
+		}
+	}
+	button {
+		border: 2px solid $mainGray;
+		border-radius: 3px; 
+		color: $mainGray;
+		cursor: pointer;
+		margin-top: 6px;
+    	height: 35px;
+	}
+}
+
 .nav-wrapper {
 	background-color: #fff;
+
+	.logo {
+		font-family: 'Poiret One', cursive;
+		font-size: 1.8rem;
+		font-weight: 500;
+	}
 }

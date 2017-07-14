@@ -1,0 +1,22 @@
+.social-icon {
+	height: 300px;
+	padding: 5rem 0;
+}
+
+.icon-box {
+	width: 70px;
+	height: 70px;
+	border: 2px solid $mainGray;
+	margin: 0 25px;
+	display: inline-block;
+
+	i {
+		padding-top: 25px;
+	}
+}
+
+.icon-box:hover {
+	background-color: $mainBlue;
+	border: none;
+	color: #fff;
+}

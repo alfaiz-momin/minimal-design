@@ -1,9 +1,24 @@
 .btn-minimal {
 	background-color: $mainGray;
 	color: #fff;
-	padding: 8px;
+	padding: 6px;
 	width: 200px;
 	border-radius: 16px;
 	border: none;
 	cursor: pointer;
+}
+
+.btn-minimal-inverse {
+	border: 2px solid $mainGray;
+	background-color: transparent;
+	color: $mainGray;
+	padding: 6px;
+	width: 200px;
+	border-radius: 16px;
+	cursor: pointer;
+}
+
+.btn-minimal-inverse:hover {
+	background-color: $mainGray;
+	color: #fff;
 }

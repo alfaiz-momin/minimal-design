@@ -1,7 +1,12 @@
 .video-section {
 
 	iframe {
-		width: 560px;
-		height: 315px;
+		width: 80%;
+		height: auto;
+
+		@include atMedium {
+			width: 560px;
+			height: 315px;
+		}
 	}
 }

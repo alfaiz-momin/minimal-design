@@ -1,17 +1,33 @@
 @mixin atSmall{
-	@media (min-width: 576px) {
+	@media screen and (min-width: 576px) {
 		@content;
 	}
 }
 
 @mixin atMedium{
-	@media (min-width: 768px) {
+	@media screen and (min-width: 768px) {
 		@content;
 	}
 }
 
 @mixin atLarge{
-	@media (min-width: 1200px) {
+	@media screen and (min-width: 1200px) {
 		@content;
+	}
+}
+
+@mixin clearFix{
+	&::after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
+}
+
+@mixin clearFixBefore{
+	&::before {
+	  content: "";
+	  display: table;
+	  clear: both;
 	}
 }

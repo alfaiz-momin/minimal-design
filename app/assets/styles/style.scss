@@ -1,14 +1,15 @@
 @import '../../../node_modules/bootstrap/scss/bootstrap';
 @import 'base/_veriables';
+@import 'base/_mixins';
 @import 'base/_font';
 @import 'modules/_navbar';
 @import 'modules/_hero';
 @import 'modules/_btn';
 @import 'modules/_sprite';
 @import 'modules/_service';
+@import 'modules/_recentWork';
 @import 'modules/_video-section';
-@import 'modules/_recent-work';
 @import 'modules/_subscribe';
 @import 'modules/_social-icon';
 @import 'modules/_site-footer';
-@import 'base/_mixins';
+

@@ -1,11 +1,22 @@
 .site-footer {
-	height: 280px;
+	height: auto;
 	background-color: $mainGray;
 	color: #fff;
 
+	@include clearFixBefore;
+
+	@include atMedium {
+		height: 280px;
+	}
+
 	ul {
-    margin-left: -38px;
-    margin-top: 15px;
+    margin-left: 0;
+    margin-top: 0;
+
+	    @include atMedium {
+		    margin-left: -38px;
+			margin-top: 15px;
+		}
 
 		li {
 			list-style: none;

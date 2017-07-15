@@ -15,13 +15,25 @@
 			color: $mainGray;
 			font-family: 'Poiret One', cursive;
 			font-size: 1.5rem;
+			@include atMedium {
+				font-size: 2.5rem;
+			}
+			@include atLarge {
+				font-size: 2.8rem;
+			}
 		}
 		p {
-			color: $mainGray;
+			color: $white;
+			text-shadow: 1px 1px 1px $mainGray;
 			font-family: 'Questrial', sans-serif;
 			padding: 10px 0;
-			font-size: 1.2rem;
+			font-size: 1rem;
 			font-weight: 600;
+
+			@include atMedium {
+				font-size: 1.2rem;
+				color: $mainGray;
+			}
 		}
 	}
 
@@ -29,11 +41,6 @@
 		display: block;
 		height: auto;
 		width: 100%;
-
-		// @mixin atSmall {
-		// height: 500px;
-		// width: 100%;
-		// }
 	}
 
 }

@@ -1,0 +1,49 @@
+.recent-work {
+	height: auto;
+	position: relative;
+
+
+	@include atMedium {
+		height: 450px;
+	}
+
+	img {
+	width: 100%;
+	height: auto;
+
+	@include atMedium {
+		width: 250px;
+		height: 300px;
+	}
+
+	}
+}
+.work-item {
+	cursor: pointer;
+	margin-bottom: 50px;
+}
+
+.recent-wrk-btn {
+	height: 50px;
+	width: 100%;
+	transition: transform 1.2s;
+	position: absolute;
+	bottom: -50px;
+	padding-top: 15px;
+	background-color: $mainGray;
+		@include clearFix;
+
+		@include atMedium {
+		width: 250px;
+		height: 50px;
+	}
+
+	a{
+		color: #fff;
+		text-decoration: none;
+	}
+}
+
+.work-item:hover .recent-wrk-btn{
+	transform: translateY(-50px);
+}

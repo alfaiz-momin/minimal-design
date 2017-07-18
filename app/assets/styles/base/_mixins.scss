@@ -10,6 +10,12 @@
 	}
 }
 
+@mixin atMediumPlus{
+	@media screen and (min-width: 990px) {
+		@content;
+	}
+}
+
 @mixin atLarge{
 	@media screen and (min-width: 1200px) {
 		@content;

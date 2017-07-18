@@ -27,7 +27,7 @@
   <div class="nav-wrapper">
     <div class="container">
       <div class="row">
-        <nav class="navbar navbar-toggleable-md">
+        <nav class="navbar fixed-top navbar-toggleable-md">
           <a href="#" class="navbar-brand logo">Minimal</a>
 
           <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aeia-example="false" aria-label="Toggle navigation">
@@ -38,19 +38,19 @@
           <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a href="#" class="nav-link">Services</a>
+                <a href="#service-section" class="nav-link">Services</a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">Our Story</a>
+                <a href="#our-story" class="nav-link">Our Story</a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">Work</a>
+                <a href="#work" class="nav-link">Work</a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">Journal</a>
+                <a href="#journal" class="nav-link">Journal</a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">Contact</a>
+                <a href="#contacn" class="nav-link">Contact</a>
               </li>
             </ul>
           </div>
@@ -81,7 +81,7 @@
         <!-- hero section END -->
 
         <!-- service section start -->
-        <div class="container service">
+        <div class="container service" id="service-section">
         <div class="row my-5">
             <div class="col-md text-center">
               <i class="fa fa-pencil-square-o fa-5x" aria-hidden="true"></i>
@@ -106,7 +106,7 @@
         <!-- serviece section END -->
 
         <!-- video section start -->
-        <div class="container video-section">
+        <div class="container video-section" id="our-story">
           <div class="row my-md-5">
             <div class="col-12 text-center">
               <h1 class="my-4">Lorem ipsum dolor sit amet.</h1>
@@ -119,26 +119,26 @@
         <!-- video section start -->
 
         <!-- recent work section start -->
-        <div class="container recent-work my-5">
+        <div class="container recent-work my-5" id="work">
           <div class="row">
             <div class="col-md-12 my-md-3">
               <h1 class="text-center pb-xs-1 pb-md-3">RECENT WORK</h1>
             </div>
           </div>
           <div class="row">
-            <div class="col-sm-12 col-md-3 col-lg-3 work-item">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 work-item">
               <img src="assets/images/place holder.jpg" alt="place holder">
               <div class="recent-wrk-btn text-center"><a href="#"><span>Details</span></a></div>
             </div>
-            <div class="col-sm-12 col-md-3 col-lg-3 work-item">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 work-item">
               <img src="assets/images/place holder.jpg" alt="place holder">
               <div class="recent-wrk-btn text-center"><a href="#"><span>Details</span></a></div>
             </div>
-            <div class="col-sm-12 col-md-3 col-lg-3 work-item">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 work-item">
               <img src="assets/images/place holder.jpg" alt="place holder">
               <div class="recent-wrk-btn text-center"><a href="#"><span>Details</span></a></div>
             </div>
-            <div class="col-sm-12 col-md-3 col-lg-3 work-item">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 work-item">
               <img src="assets/images/place holder.jpg" alt="place holder">
               <div class="recent-wrk-btn text-center"><a href="#"><span>Details</span></a></div>
             </div>
@@ -147,11 +147,11 @@
         <!-- recent work section END -->
 
         <!-- subscribe section start -->
-        <div class="subscribe my-5">
+        <div class="subscribe" id="journal">
           <div class="container">
             <div class="row">
-              <div class="col-md-12 text-center mt-5">
-                <h1 class="mt-5">JOIN OUR SUBSCRIPTION</h1>
+              <div class="col-md-12 text-center my-5">
+                <h1>JOIN OUR SUBSCRIPTION</h1>
                 <p class="py-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                 <button class="btn-minimal-inverse">Click Here To Subscribe</button>
               </div>
@@ -161,7 +161,7 @@
         <!-- subscribe section END -->
 
         <!-- social icon section start -->
-        <div class="container social-icon">
+        <div class="container social-icon" id="contacn">
           <div class="row">
             <div class="col-md-12 text-center">
               <div class="icon-box"><i class="fa fa-facebook" aria-hidden="true"></i></div>
@@ -176,14 +176,14 @@
         <!-- Main content End, below section will be same in all html pages-->
 
         <footer class="site-footer">
-          <div class="container pt-5">
-            <div class="row">
-              <div class="col-sm-12 col-md-6 col-lg-3 mx-auto">
+          <div class="container">
+            <div class="row pt-5">
+              <div class="col-sm-12 col-md-3 col-lg-3 mx-auto">
                 <h3>Location</h3>
                 <p>Address: Lorem ipsum dolor sit amet,<br> consectetur adipisicing.</p>
                 <p><u>See in the map</u> <span><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span></p>
               </div>
-              <div class="col-sm-12 col-md-6 col-lg-3 mx-auto">
+              <div class="col-sm-12 col-md-3 col-lg-3 mx-auto">
                 <h3>Company</h3>
                 <ul>
                   <li>Our story</li>
@@ -192,13 +192,18 @@
                   <li>Careers</li>
                 </ul>
               </div>
-              <div class="col-sm-12 col-md-6 col-lg-3 mx-auto">
+              <div class="col-sm-12 col-md-3 col-lg-3 mx-auto">
                 <h3>Company</h3>
                 <ul>
                   <li>FAQ</li>
                   <li>Contact us</li>
                   <li>Policies</li>
                 </ul>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <p class="text-center">Code By: <u>Alfaiz Momin.</u></p>
               </div>
             </div>
           </div>

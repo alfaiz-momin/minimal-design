@@ -6,6 +6,12 @@
 	height: 400px;
 	position: relative;
 	overflow: hidden;
+
+		@include atMediumPlus {
+			width: 250px;
+			height: 350px;
+		}
+
 	}
 }
 .work-item {
@@ -17,12 +23,17 @@
 }
 
 .recent-wrk-btn {
-	height: 400px;
 	width: 300px;
+	height: 400px;
 	transition: transform 0.6s;
 	bottom: -400px;
 	position: absolute;
 	background-color: transparent;
+
+		@include atMediumPlus {
+			width: 250px;
+			height: 350px;
+		}
 
 	span {
 		background-color: $mainGray;
@@ -39,4 +50,8 @@
 
 .work-item:hover .recent-wrk-btn{
 	transform: translateY(-300px);
+
+	@include atMediumPlus {
+		transform: translateY(-350px);
+	}
 }

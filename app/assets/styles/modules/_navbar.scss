@@ -1,13 +1,16 @@
 .navbar {
 	width: 100%;
-	background: none !important;
+	background-color: $white;
+	border-bottom: 2px solid $mainGray;
 
 	a {
 		color: $mainGray;
+		width: 100px;
+		text-align: center;
 	}
 
 	li {
-		margin-left: 1rem;
+		margin-left: 5px;
 	}
 	li:hover {
 		background-color: $mainGray;
@@ -30,7 +33,12 @@
 
 	.logo {
 		font-family: 'Poiret One', cursive;
+		margin-left: 5px;
 		font-size: 1.8rem;
 		font-weight: 500;
+
+		@include atMedium {
+			margin-left: 3rem;
+		}
 	}
 }
